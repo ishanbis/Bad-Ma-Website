@@ -1,0 +1,136 @@
+body {
+    background-color: lightyellow;
+    font-family: Arial, sans-serif;
+    animation: color-change 10s infinite alternate;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: blueviolet;
+    color: white;
+    animation: header-anim 5s infinite alternate;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav li {
+    margin: 0 10px;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  main section {
+    flex-basis: calc(33.33% - 40px);
+    padding: 20px;
+    background-color: white;
+    color: blueviolet;
+    animation: section-anim 5s infinite alternate;
+  }
+  
+  main section h2 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: lightblue;
+    color: white;
+    animation: form-anim 5s infinite alternate;
+  }
+  
+  form label, form input[type="submit"] {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: blueviolet;
+    color: white;
+    animation: footer-anim 5s infinite alternate;
+  }
+  
+  footer p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-color: lightyellow;
+    }
+    100% {
+      background-color: lightblue;
+    }
+  }
+  
+  @keyframes header-anim {
+    0% {
+      background-color: blueviolet;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
+  
+  @keyframes section-anim {
+    0% {
+      background-color: white;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
+  
+  @keyframes form-anim {
+    0% {
+      background-color: lightblue;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
+  
+  @keyframes footer-anim {
+    0% {
+      background-color: blueviolet;
+    }
+    100% {
+      background-color: yellow;
+    }
+  }
